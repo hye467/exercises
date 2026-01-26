@@ -1,1 +1,3 @@
 When running `Promise.all(...)`, the way it handles errors is that it rejects with the value of the first failed promise. If you handle errors in each individual promise, it will instead fill the promise array it returns with the value returned in your catch statement.
+
+![Code Demonstration](demo.png)
