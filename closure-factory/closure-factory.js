@@ -7,12 +7,12 @@ function passcodeFactory() {
 
 function passcodeCacheFactory() {
   const passcodeCache = new Map();
-  return (key) => {
-    if (passcodeCache.has(key))
-      console.log("The passcode is " + passcodeCache.get(key));
+  return (name) => {
+    if (passcodeCache.has(name))
+      console.log("The passcode is " + passcodeCache.get(name));
     else {
       const passcode = Math.round(Math.random() * 100);
-      passcodeCache.set(key, passcode);
+      passcodeCache.set(name, passcode);
       console.log("The passcode is " + passcode);
     }
   };
